@@ -20,6 +20,8 @@ namespace ProjetoModeloDDD.Domain.Entities
 
         public bool Ativo { get; set; }
 
+        public virtual IEnumerable<Produto> Produtos { get; set; }
+
         public bool ClienteEspecial(Cliente cliente)
         {
             return cliente.Ativo && DateTime.Now.Year - cliente.DataCadastro.Year >= 5;
