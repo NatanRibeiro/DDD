@@ -1,3 +1,5 @@
+using System.Data.SqlTypes;
+
 namespace ProjetoModeloDDD.Infra.Data.Migrations
 {
     using System;
