@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using ProjetoModeloDDD.MVC.AutoMapper;
 
 namespace ProjetoModeloDDD.MVC
 {
@@ -16,6 +17,8 @@ namespace ProjetoModeloDDD.MVC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            AutoMapperConfig.RegisterMappings();
         }
     }
 }

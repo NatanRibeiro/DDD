@@ -4,17 +4,17 @@ using ProjetoModeloDDD.MVC.ViewModels;
 
 namespace ProjetoModeloDDD.MVC.AutoMapper
 {
-    public class ViewModelToDomainMappingProfile : Profile
+    public class DomainToViewModelMappingProfile : Profile
     {
         public override string ProfileName
         {
-            get { return "DomainToViewModelMappings"; }
+            get { return "ViewModelToDomainMappings"; }
         }
 
         protected override void Configure()
         {
-            Mapper.CreateMap<Cliente, ClienteViewModel>();
-            Mapper.CreateMap<Produto, ProdutoViewModel>();
+            Mapper.CreateMap<ClienteViewModel, Cliente>();
+            Mapper.CreateMap<ProdutoViewModel, Produto>();
         }
     }
 }

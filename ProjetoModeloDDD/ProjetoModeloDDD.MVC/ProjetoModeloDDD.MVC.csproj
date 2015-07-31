@@ -167,9 +167,11 @@
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ClienteViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\ProdutoViewModel.cs" />
@@ -204,7 +206,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -232,10 +236,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Clientes\Index.cshtml" />
+    <Content Include="Views\Clientes\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -247,6 +252,10 @@
     <ProjectReference Include="..\ProjetoModeloDDD.Domain\ProjetoModeloDDD.Domain.csproj">
       <Project>{cf470d25-148e-4afc-b244-7f96c17e42b9}</Project>
       <Name>ProjetoModeloDDD.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoModeloDDD.Infra.Data\ProjetoModeloDDD.Infra.Data.csproj">
+      <Project>{3d47856e-df4d-4092-9442-e3f99d08e30a}</Project>
+      <Name>ProjetoModeloDDD.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

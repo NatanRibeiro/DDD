@@ -32,14 +32,16 @@
   <ItemGroup>
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Produto.cs" />
-    <Compile Include="Interfaces\IClienteRepository.cs" />
-    <Compile Include="Interfaces\IProdutoRepository.cs" />
-    <Compile Include="Interfaces\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Repositories\IClienteRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IProdutoRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Services\IClienteService.cs" />
+    <Compile Include="Interfaces\Services\IProdutoService.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
