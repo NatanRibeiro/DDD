@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using ProjetoModeloDDD.Domain.Entities;
@@ -19,7 +20,7 @@ namespace ProjetoModeloDDD.Domain.Services
 
         public IEnumerable<Cliente> BuscarPorNome(string nome)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public IEnumerable<Cliente> ObterClientesEspeciais(IEnumerable<Cliente> clientes)

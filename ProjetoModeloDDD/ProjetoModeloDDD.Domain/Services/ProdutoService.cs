@@ -16,11 +16,6 @@ namespace ProjetoModeloDDD.Domain.Services
             _produtoRepository = produtoRepository;
         }
 
-        public ProdutoService(IRepositoryBase<Produto> repository) : base(repository)
-        {
-
-        }
-
         public IEnumerable<Produto> BuscarPorNome(string nome)
         {
             return _produtoRepository.BuscarPorNome(nome);

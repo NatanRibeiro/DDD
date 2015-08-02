@@ -1,8 +1,8 @@
-﻿using System.Linq;
+﻿using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Linq;
 using ProjetoModeloDDD.Domain.Entities;
-using System;
 using ProjetoModeloDDD.Infra.Data.EntityConfig;
 
 namespace ProjetoModeloDDD.Infra.Data.Context

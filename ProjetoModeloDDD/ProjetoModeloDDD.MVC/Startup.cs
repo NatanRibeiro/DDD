@@ -1,9 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
+using ProjetoModeloDDD.MVC;
 
-[assembly: OwinStartup(typeof(ProjetoModeloDDD.MVC.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
 namespace ProjetoModeloDDD.MVC
 {
